@@ -27,11 +27,11 @@ int main(int argc, char const *argv[])
 			if (cantidad >= QUARTER) 
 
 				tquarters = cantidad / QUARTER;
-				tpenniesQ = cantidad % 25;
+				tpenniesQ = cantidad % QUARTER;
 				tdimes = cantidad / DIME;
-				tpenniesD = cantidad % 10;
+				tpenniesD = cantidad % DIME;
 				tnickels = cantidad / NICKEL;			
-				tpenniesN = cantidad % 5;
+				tpenniesN = cantidad % NICKEL;
 
 			cout << endl << "Desglose de la cantidad introducida: " << endl; 
 			cout << endl;
@@ -47,9 +47,9 @@ int main(int argc, char const *argv[])
 		{	//* Dimes
 			if (cantidad >= DIME)  
 				tdimes = cantidad / DIME;
-				tpenniesD = cantidad % 10;
+				tpenniesD = cantidad % DIME;
 				tnickels = cantidad / NICKEL;			
-				tpenniesN = cantidad % 5;
+				tpenniesN = cantidad % NICKEL;
 
 			cout << endl << "Desglose de la cantidad introducida: " << endl;
 			cout << endl;	
@@ -63,7 +63,7 @@ int main(int argc, char const *argv[])
 		{	//* Nickels
 			if (cantidad >= NICKEL)
 				tnickels = cantidad / NICKEL;			
-				tpenniesN = cantidad % 5;
+				tpenniesN = cantidad % NICKEL;
 
 			cout << endl << "Desglose de la cantidad introducida: " << endl;
 			cout << endl;	

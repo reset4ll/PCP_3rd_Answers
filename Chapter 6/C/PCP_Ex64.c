@@ -25,11 +25,11 @@ int main(int argc, char const *argv[])
 			if (cantidad >= QUARTER) 
 
 				tquarters = cantidad / QUARTER;
-				tpenniesQ = cantidad % 25;
+				tpenniesQ = cantidad % QUARTER;
 				tdimes = cantidad / DIME;
-				tpenniesD = cantidad % 10;
+				tpenniesD = cantidad % DIME;
 				tnickels = cantidad / NICKEL;			
-				tpenniesN = cantidad % 5;
+				tpenniesN = cantidad % NICKEL;
 
 			printf("\nDesglose de la cantidad introducida:\n");
 			printf("\n\tQuarters = %d y Pennies = %d\n", tquarters, tpenniesQ);
@@ -44,9 +44,9 @@ int main(int argc, char const *argv[])
 		{	//* Dimes
 			if (cantidad >= DIME)  
 				tdimes = cantidad / DIME;
-				tpenniesD = cantidad % 10;
+				tpenniesD = cantidad % DIME;
 				tnickels = cantidad / NICKEL;			
-				tpenniesN = cantidad % 5;
+				tpenniesN = cantidad % NICKEL;
 
 			printf("\nDesglose de la cantidad introducida:\n");	
 			printf("\n\tDimes = %d y Pennies = %d\n", tdimes, tpenniesD);
@@ -59,7 +59,7 @@ int main(int argc, char const *argv[])
 		{	//* Nickels
 			if (cantidad >= NICKEL)
 				tnickels = cantidad / NICKEL;			
-				tpenniesN = cantidad % 5;
+				tpenniesN = cantidad % NICKEL;
 
 			printf("\nDesglose de la cantidad introducida:\n");	
 			printf("\n\tNickels = %d y Pennies = %d\n", tnickels, tpenniesN);
