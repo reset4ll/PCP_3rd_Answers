@@ -1,4 +1,4 @@
-/* Exercise 5.5 of Practical C Programming, 3rd Ed.*/
+/* Exercise 5.6 of Practical C Programming, 3rd Ed.*/
 /* Toma los minutos en la entrada */
 /* y desglosa el total en horas y minutos.*/
 /* A.Esteban, 2015 */
